@@ -14,6 +14,9 @@ class Tank:
         self.r = r
         self.speed = 0
 
+    def rotate(self, r):
+        self.set_sprites(self.x, self.y, self.r + r)
+
     def set_sprites(self,x,y,r):
         self.x = x
         self.y = y
